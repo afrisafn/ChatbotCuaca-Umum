@@ -92,7 +92,9 @@ body {
     }
     .chat-footer {
         display: flex;
-        align-items: center;
+        /* align-items: center; */
+        /* width: 100%; */
+        justify-content: center;
         padding: 8px;
         border-top: 1px solid rgba(255, 255, 255, 0.395);
         background: rgba(0, 0, 0, 0.2);
@@ -108,28 +110,29 @@ body {
         position: relative;
     }
     .chat-footer textarea {
-        flex: 1;
+        flex: none;
         resize: none;
         padding: 12px 45px 12px 15px;
         border: none;
-        /* border-radius: 20px;  */
+        width: 48%; /* Bisa diubah sesuai desain */
         font-size: 12px;
         height: 20px;
         outline: none;
-        width: 100%;
+        right: 20px;        
         backdrop-filter: blur(20px);
         margin-right: 6px;
         font-family: 'Times New Roman', sans-serif;
     }
     .chat-footer button {
         position: absolute;
-        right: 20px; /* Supaya tidak terlalu mepet */
+        right: -2px; /* Supaya tidak terlalu mepet */
         top: 47%;
         transform: translateY(-50%);
-        width: 35px;
+        /* width: 35px; */
         height: 35px;
         border: none;
         cursor: pointer;
+        margin-top: 3px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -148,6 +151,7 @@ body {
         outline: none;
         z-index: 15;
         margin-right: 5px;
+        margin-top: 10px;
         background: rgba(255, 255, 255, 0.2);
         color: rgb(15, 15, 15);
         background-color: rgba(255, 255, 255, 0.2); /* Ubah warna latar belakang */
@@ -166,14 +170,16 @@ body {
         background: transparent; /* Bikin transparan */
         color: rgba(255, 255, 255, 0.943); /* Sesuaikan warna teks */
         background: rgba(255, 255, 255, 0.1);
-
+        word-wrap: break-word;
+        overflow-y: auto; /* Tambahkan scrollbar jika penuh */
+        white-space: pre-wrap;
     }
 
     #send-btn {
         width: 45px;
         height: 45px;
         border: none;
-        margin-left: 8px;
+        margin-left: 10px;
         background: #2c3e50;
         border-radius: 50%;
         display: flex;
@@ -181,6 +187,8 @@ body {
         justify-content: center;
         cursor: pointer;
         transition: background 0.3s ease;
+        margin-left: 10px;
+
     }
 
     #send-btn svg {
