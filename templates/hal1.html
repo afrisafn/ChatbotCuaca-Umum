@@ -10,7 +10,7 @@
 <body>
     <!-- Floating Chat Button -->
     <button class="chatbot-button" id="chatbotToggle">
-        <img src="{{ url_for('static', filename='images/1.png') }}" alt="Chatbot">
+    <img src="{{ url_for('static', filename='images/CHATBOT.png') }}" alt="Chatbot">
     </button>
     
     <!-- Chat Window -->
@@ -27,21 +27,21 @@
                 <img class="bmkg-logo" src="{{ url_for('static', filename='images/bmkg-logo.png') }}" alt="BMKG Logo">
                 <h2>Informasi Prakiraan Cuaca</h2>
                 <p>Dapatkan informasi cuaca terkini.</p>
-                <a href="/cuaca">Lihat Detail</a>
+                <a href="/cuaca">Yuk Tanya🤗</a>
             </div>
             <div class="card">
                 <img class="bmkg-logo" src="{{ url_for('static', filename='images/bmkg-logo.png') }}" alt="BMKG Logo">
                 <h2>Informasi Umum</h2>
                 <p>Temukan informasi seputar BMKG.</p>
-                <a href="/umum">Lihat Detail</a>
+                <a href="/umum">Yuk Eksplor🤗</a>
             </div>
         </div>
 
         <div class="clock-container">
             <div class="cloud"></div> <!-- Awan besar -->
             <div class="cloud small"></div> <!-- Awan kecil -->
-            <div id="clock">00:00</div>
-            <div id="date">1 Januari 2024</div>
+            <div id="clock"></div>
+            <div id="date"></div>
         </div>
     </div>
 

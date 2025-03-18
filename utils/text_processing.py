@@ -56,6 +56,7 @@ def process_prompt_gemini(bmkg_data, user_input):
     logger.info("Mengirim prompt ke model AI.")
     # response = model.generate_content(prompt)
     response = gemini_model.generate_content(prompt)
+    # diletakkan debug
     text = response.candidates[0].content.parts[0].text.strip()
 
     text = re.sub(r"\*\*(.*?)\*\*", r"<b>\1</b>", text)

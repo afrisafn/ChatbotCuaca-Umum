@@ -12,7 +12,7 @@ def getName(user_message):
     
     user_message = re.sub(
     r"\b(besok|lusa|hari ini|jam|nanti|siang|sore|pukul|malam|pagi|saat ini|sebentar lagi|lagi|barusan|baru saja|bentar|sering|jarang|setiap|tiap|terkadang|sekarang|"
-    r"apakah|bagaimana|seperti apa|kapan|dimana|mengapa|kenapa|sedang|itu|di|berada|ada|mungkinkah|mungkin|akan|emang|akankah|yakin(kah)?|sudah(kah)?|masih(kah)?|betul(kah)?|"
+    r"apakah|bagaimana|seperti apa|kapan|saat ini|dimana|mengapa|kenapa|jika|sedang|itu|di|berada|berapa|ada|mungkinkah|mungkin|akan|emang|akankah|yakin(kah)?|sudah(kah)?|masih(kah)?|betul(kah)?|"
     r"sering(kah)?|ada(kah)?|bisa(kah)?|tidak(kah)?|bener(an)?|benar|mau|agak|lumayan|terlalu|cukup|hujan|panas|mendung|cerah|berawan|gerimis|dingin|hangat|kabut|badai|"
     r"angin|petir|suhu)\b|\d+|[^\w\s]",    
     "",
