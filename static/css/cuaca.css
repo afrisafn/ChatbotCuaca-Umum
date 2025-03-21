@@ -15,8 +15,7 @@ body {
         right: 20px;
         width: 350px;
         height: 500px;
-        /* background: linear-gradient(0.25turn, #214e96, #2a5b92, #3e7ca3, #86c3e9, #c3e1f4); */
-        background: linear-gradient(0.25turn, #b3d4ffd7, #6babff, #0537826c, #0f6bc294);
+        background: linear-gradient(to bottom ,#06429c6c, #6babff, #b3d4ffd7, #06429c6c);
         border-radius: 15px;
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
         overflow: hidden;
@@ -61,12 +60,14 @@ body {
         font-family: 'Times New Roman', sans-serif; 
     }
     .message {
-        padding: 8px;
+        padding: 8px 10px;
         margin: 5px;
         border-radius: 8px;
-        max-width: fit-content;
+        max-width: 75%;
         word-wrap: break-word;
+        overflow-wrap: break-word;
         display: inline-block;
+        white-space: normal;
         position: relative;
         text-align: left;
         font-size: 14px;
@@ -84,9 +85,12 @@ body {
         background-color: #97fcff95;
         padding: 8px 10px;
         text-align: left;
+        max-width: 75%;
         width: relative;
         border-radius: 8px;
-        /* backdrop-filter: blur(20px); */
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        white-space: normal;        
         box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
         font-family: 'Times New Roman', sans-serif;
     }
@@ -96,8 +100,8 @@ body {
         /* width: 100%; */
         justify-content: center;
         padding: 8px;
-        border-top: 1px solid rgba(255, 255, 255, 0.395);
-        background: rgba(0, 0, 0, 0.2);
+        border-top: 1px solid rgba(224, 222, 222, 0.445);
+        background: rgba(232, 232, 232, 0.2);
         backdrop-filter: blur(15px);
         font-family: 'Times New Roman', sans-serif;
         

@@ -82,11 +82,11 @@ document.addEventListener("DOMContentLoaded", () => {
             const botTime = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
 
             if (response.ok && data?.response) {
-                let modelLabel = "[🤖 AI]";
+                let modelLabel = "";
                 if (data?.model === "gemini") {
-                    modelLabel = "[Gemini 🤖]";
+                    modelLabel = "";
                 } else if (data?.model === "deepseek") {
-                    modelLabel = "[DeepSeek 🔍]";
+                    modelLabel = "";
                 }
 
                 botMessage.innerHTML = `${modelLabel} ${data.response} <span style="float: right; font-size: 0.8em; color: gray; margin-left: 10px;">${botTime}</span>`;

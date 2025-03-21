@@ -104,9 +104,9 @@ try {
      // Tentukan label model yang digunakan
      let modelLabel = "[🤖 AI]";
      if (selectedModel === "gemini") {
-         modelLabel = "[Gemini 🤖]";
+         modelLabel = "";
      } else if (selectedModel === "deepseek") {
-         modelLabel = "[DeepSeek 🔍]";
+         modelLabel = "";
      }
  
     

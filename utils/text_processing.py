@@ -60,6 +60,8 @@ def process_prompt_gemini(bmkg_data, user_input):
     text = response.candidates[0].content.parts[0].text.strip()
 
     text = re.sub(r"\*\*(.*?)\*\*", r"<b>\1</b>", text)
+    text = re.sub(r"\[Gemini.*?\]", "", text)  # Menghapus teks "[Gemini 🤖]"
+
 
     return text
 
